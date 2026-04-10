@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | IT Data Analytics</title>
+    <style>
+        :root {
+            --primary: #0078d4;
+            --dark: #1e1e1e;
+            --light: #f8f9fa;
+        }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: var(--light);
+            color: var(--dark);
+        }
+        nav {
+            background: #001f3f;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: linear-gradient(135deg, #001f3f, #0078d4);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: -20px auto 40px;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .project-card {
+            border: 1px solid #e1e4e8;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        .tag {
+            display: inline-block;
+            background: #e1f5fe;
+            color: #01579b;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-right: 5px;
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+        .btn:hover {
+            background: #005a9e;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Overview</a>
+    <a href="projects.html">Projects</a>
+    <a href="resume.html">Resume</a>
+</nav>
+
+<section class="hero">
+    <h1>Technical Projects</h1>
+    <p>A deep dive into my data analytics and database work.</p>
+</section>
+
+<div class="container">
+    
+    <div class="project-card">
+        <h2>Powersports Inventory & Maintenance Tracker</h2>
+        <span class="tag">SQL Server</span> 
+        <span class="tag">Relational Design</span> 
+        <span class="tag">Power BI</span>
+        <p>For my capstone, I developed a full-scale tracking system for vehicle assets. I designed a relational database with 6 tables to handle inventory and maintenance history from 2021 to 2026.</p>
+        <ul>
+            <li>Implemented ETL processes to clean raw maintenance logs.</li>
+            <li>Created an interactive dashboard to visualize upcoming service intervals.</li>
+        </ul>
+        <a href="#" class="btn">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+        <h2>AdventureWorks Sales Analysis</h2>
+        <span class="tag">SQL</span> 
+        <span class="tag">Data Modeling</span>
+        <p>An analysis of annual sales and revenue performance using the AdventureWorks database. This project focused on identifying top-performing stores and business types.</p>
+        <a href="#" class="btn">View Project Folder</a>
+    </div>
+
+    <div class="project-card">
+        <h2>Melbourne Housing Market Study</h2>
+        <span class="tag">Python</span> 
+        <span class="tag">Machine Learning</span> 
+        <span class="tag">Jupyter</span>
+        <p>A data scrubbing and predictive modeling case study focused on the Melbourne housing market to identify key price drivers.</p>
+        <a href="#" class="btn">View Jupyter Notebook</a>
+    </div>
+
+</div>
+
+</body>
+</html>
