@@ -91,4 +91,86 @@
             padding: 30px;
             margin-bottom: 30px;
             border-radius: 12px;
-            border-left: 8
+            border-left: 8px solid var(--accent-red); /* Strong Red Contrast */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            color: var(--text-dark);
+        }
+        
+        .tag {
+            display: inline-block;
+            background: #fee2e2; /* Light Red Background */
+            color: var(--accent-red);
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            margin-right: 8px;
+            margin-bottom: 10px;
+        }
+
+        .contact-box {
+            background: var(--text-dark);
+            color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .contact-box h2 { color: #ffffff; margin-top: 0; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Overview</a>
+    <a href="projects.html">Projects</a>
+    <a href="resume.html">Resume</a>
+</nav>
+
+<section class="hero">
+    <h1>Tre'Von K.</h1>
+    <p>IT Data Analyst</p>
+</section>
+
+<div class="container">
+    <h2 class="section-title">Key Projects</h2>
+    
+    <div class="project-card">
+        <h3>Powersports Inventory & Maintenance Tracker</h3>
+        <div class="tags">
+            <span class="tag">SQL SERVER</span>
+            <span class="tag">RELATIONAL DB</span>
+            <span class="tag">CAPSTONE</span>
+        </div>
+        <p>Comprehensive asset tracking system designed to manage vehicle inventory and maintenance logs. Built using a 6-table relational structure for maximum data integrity.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>AdventureWorks Sales Analysis</h3>
+        <div class="tags">
+            <span class="tag">POWER BI</span>
+            <span class="tag">SQL</span>
+        </div>
+        <p>Strategic analysis of retail data, focusing on revenue trends and store-level performance metrics.</p>
+    </div>
+
+    <div class="contact-box">
+        <h2>Let's Connect</h2>
+        <p>Email: tkopping8@icloud.com | [LinkedIn Link]</p>
+    </div>
+</div>
+
+</body>
+</html>
