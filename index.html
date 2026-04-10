@@ -3,132 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | IT Data Analytics</title>
+    <title>Tre'Von K. | Data Analytics</title>
     <style>
         :root {
-            --accent-red: #b91c1c;    /* Deep Red */
-            --bg-light: #f0f2f5;      /* Cool Grey Background */
-            --card-white: #ffffff;    /* Pure White for Cards */
-            --text-dark: #1f2937;     /* High-Contrast Dark Text */
-            --text-muted: #4b5563;    /* Grey for smaller text */
+            /* Colors sampled from your castle photo */
+            --primary-navy: #1a3a5a;   /* The deep blue clouds */
+            --accent-gold: #d4af37;    /* The sun hitting the stone */
+            --stone-grey: #f4f4f9;     /* The light stone/mist */
+            --text-main: #2c3e50;
         }
-        
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
             margin: 0;
-            background-color: var(--bg-light);
-            color: var(--text-dark);
+            background-color: var(--stone-grey);
+            color: var(--text-main);
         }
-        
-        nav {
-            background: #ffffff;
-            padding: 1rem;
-            text-align: center;
-            border-bottom: 3px solid var(--accent-red);
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        
-        nav a {
-            color: var(--text-dark);
-            margin: 0 20px;
-            text-decoration: none;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 0.85rem;
-            letter-spacing: 1px;
-        }
-        
-        nav a:hover {
-            color: var(--accent-red);
-        }
-        
+
+        /* The Hero section using your photo */
         .hero {
-            padding: 80px 20px;
-            text-align: center;
-            background: #ffffff;
-            border-bottom: 1px solid #e5e7eb;
-        }
-        
-        .hero h1 {
-            font-size: 3rem;
-            margin: 0;
-            color: var(--text-dark);
-            font-weight: 800;
-        }
-
-        .hero p {
-            color: var(--accent-red);
-            font-weight: 600;
-            font-size: 1.1rem;
-            margin-top: 10px;
-        }
-        
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        
-        .section-title {
-            color: var(--text-dark);
-            font-size: 1.5rem;
-            margin-bottom: 25px;
+            height: 75vh;
+            background: linear-gradient(rgba(26, 58, 90, 0.3), rgba(26, 58, 90, 0.5)), 
+                        url('castle-bg.jpg'); /* Make sure your file is named this */
+            background-size: cover;
+            background-position: center;
             display: flex;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
-        }
-
-        .section-title::after {
-            content: "";
-            flex: 1;
-            margin-left: 20px;
-            height: 2px;
-            background: var(--accent-red);
-        }
-        
-        .project-card {
-            background: var(--card-white);
-            padding: 30px;
-            margin-bottom: 30px;
-            border-radius: 12px;
-            border-left: 8px solid var(--accent-red); /* Strong Red Contrast */
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            transition: transform 0.2s;
-        }
-        
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-
-        .project-card h3 {
-            margin-top: 0;
-            font-size: 1.4rem;
-            color: var(--text-dark);
-        }
-        
-        .tag {
-            display: inline-block;
-            background: #fee2e2; /* Light Red Background */
-            color: var(--accent-red);
-            padding: 4px 12px;
-            border-radius: 6px;
-            font-size: 0.75rem;
-            font-weight: 800;
-            margin-right: 8px;
-            margin-bottom: 10px;
-        }
-
-        .contact-box {
-            background: var(--text-dark);
-            color: #ffffff;
-            padding: 40px;
-            border-radius: 12px;
+            color: white;
             text-align: center;
-            margin-top: 60px;
+            border-bottom: 6px solid var(--primary-navy);
         }
 
-        .contact-box h2 { color: #ffffff; margin-top: 0; }
+        .hero h1 {
+            font-size: 4rem;
+            margin: 0;
+            letter-spacing: 4px;
+            text-shadow: 2px 4px 10px rgba(0,0,0,0.5);
+        }
+
+        nav {
+            background: var(--primary-navy);
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 25px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-gold);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: -80px auto 50px;
+            background: white;
+            padding: 60px;
+            border-radius: 4px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: var(--primary-navy);
+            border-bottom: 2px solid var(--accent-gold);
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            border: 1px solid #eee;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--primary-navy);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-left-color: var(--accent-gold);
+            transform: translateX(10px);
+        }
     </style>
 </head>
 <body>
@@ -140,35 +106,17 @@
 </nav>
 
 <section class="hero">
-    <h1>Tre'Von K.</h1>
-    <p>IT Data Analyst</p>
+    <h1>TRE'VON K.</h1>
+    <p style="letter-spacing: 5px; font-weight: bold;">DATA ANALYTICS</p>
 </section>
 
 <div class="container">
-    <h2 class="section-title">Key Projects</h2>
+    <h2>Overview</h2>
+    <p>Professional summary and focus areas go here. This section is designed to stand out against the landscape above.</p>
     
-    <div class="project-card">
-        <h3>Powersports Inventory & Maintenance Tracker</h3>
-        <div class="tags">
-            <span class="tag">SQL SERVER</span>
-            <span class="tag">RELATIONAL DB</span>
-            <span class="tag">CAPSTONE</span>
-        </div>
-        <p>Comprehensive asset tracking system designed to manage vehicle inventory and maintenance logs. Built using a 6-table relational structure for maximum data integrity.</p>
-    </div>
-
-    <div class="project-card">
-        <h3>AdventureWorks Sales Analysis</h3>
-        <div class="tags">
-            <span class="tag">POWER BI</span>
-            <span class="tag">SQL</span>
-        </div>
-        <p>Strategic analysis of retail data, focusing on revenue trends and store-level performance metrics.</p>
-    </div>
-
-    <div class="contact-box">
-        <h2>Let's Connect</h2>
-        <p>Email: tkopping8@icloud.com | [LinkedIn Link]</p>
+    <div class="card">
+        <h3>Primary Skillset</h3>
+        <p>Information regarding your technical capabilities, tools, and methodologies.</p>
     </div>
 </div>
 
