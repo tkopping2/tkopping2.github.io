@@ -6,159 +6,89 @@
     <title>Portfolio | IT Data Analytics</title>
     <style>
         :root {
-            --primary-red: #cc0000;    /* Bold Crimson Red */
-            --accent-red: #ff4d4d;     /* Lighter Red for hover */
-            --bg-deep: #0f0f0f;        /* Near Black */
-            --bg-card: #1a1a1a;        /* Dark Grey for cards */
-            --text-silver: #d1d1d1;    /* Main text color */
+            --accent-red: #b91c1c;    /* Deep Red */
+            --bg-light: #f0f2f5;      /* Cool Grey Background */
+            --card-white: #ffffff;    /* Pure White for Cards */
+            --text-dark: #1f2937;     /* High-Contrast Dark Text */
+            --text-muted: #4b5563;    /* Grey for smaller text */
         }
         
         body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
-            background-color: var(--bg-deep);
-            color: var(--text-silver);
+            background-color: var(--bg-light);
+            color: var(--text-dark);
         }
         
         nav {
-            background: #000;
+            background: #ffffff;
             padding: 1rem;
             text-align: center;
-            border-bottom: 2px solid var(--primary-red);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            border-bottom: 3px solid var(--accent-red);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
         
         nav a {
-            color: #fff;
+            color: var(--text-dark);
             margin: 0 20px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 700;
             text-transform: uppercase;
+            font-size: 0.85rem;
             letter-spacing: 1px;
-            font-size: 0.9rem;
-            transition: color 0.3s;
         }
         
         nav a:hover {
-            color: var(--primary-red);
+            color: var(--accent-red);
         }
         
         .hero {
-            padding: 100px 20px;
+            padding: 80px 20px;
             text-align: center;
-            background: radial-gradient(circle at center, #250000 0%, #0f0f0f 70%);
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
         }
         
         .hero h1 {
-            color: #fff;
-            font-size: 3.5rem;
+            font-size: 3rem;
             margin: 0;
-            text-shadow: 0 0 15px rgba(204, 0, 0, 0.5);
+            color: var(--text-dark);
+            font-weight: 800;
         }
 
         .hero p {
-            color: var(--primary-red);
-            font-weight: bold;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            color: var(--accent-red);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-top: 10px;
         }
         
         .container {
             max-width: 900px;
-            margin: -50px auto 60px;
-            background: var(--bg-card);
-            padding: 40px;
-            border-radius: 8px;
-            border: 1px solid #333;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+            margin: 40px auto;
+            padding: 0 20px;
         }
         
-        h2 {
-            color: var(--primary-red);
-            font-size: 1.8rem;
-            border-left: 4px solid var(--primary-red);
-            padding-left: 15px;
-            margin-top: 40px;
-            text-transform: uppercase;
+        .section-title {
+            color: var(--text-dark);
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title::after {
+            content: "";
+            flex: 1;
+            margin-left: 20px;
+            height: 2px;
+            background: var(--accent-red);
         }
         
         .project-card {
-            border: 1px solid #2a2a2a;
-            padding: 25px;
-            margin-bottom: 25px;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-        }
-        
-        .project-card:hover {
-            background: #222;
-            border-color: var(--primary-red);
-            transform: scale(1.01);
-        }
-
-        .project-card h3 {
-            margin-top: 0;
-            color: #fff;
-        }
-        
-        .tag {
-            display: inline-block;
-            border: 1px solid var(--primary-red);
-            color: var(--primary-red);
-            padding: 2px 10px;
-            border-radius: 3px;
-            font-size: 0.75rem;
-            font-weight: bold;
-            margin-right: 8px;
-            margin-bottom: 10px;
-        }
-
-        strong {
-            color: #fff;
-        }
-    </style>
-</head>
-<body>
-
-<nav>
-    <a href="index.html">Overview</a>
-    <a href="projects.html">Projects</a>
-    <a href="resume.html">Resume</a>
-</nav>
-
-<section class="hero">
-    <h1>Tre'Von K.</h1>
-    <p>IT Data Analyst</p>
-</section>
-
-<div class="container">
-    <h2>Professional Profile</h2>
-    <p>Driven IT Data Analyst student specializing in relational databases and visual storytelling through data. Focused on delivering actionable insights for the powersports and medical industries.</p>
-
-    <h2>Featured Analytics</h2>
-    <div class="project-card">
-        <h3>Powersports Inventory & Maintenance Tracker</h3>
-        <div class="tags">
-            <span class="tag">SQL SERVER</span>
-            <span class="tag">ETL</span>
-            <span class="tag">DASHBOARDING</span>
-        </div>
-        <p>A capstone initiative focused on asset management. Designed a complex 6-table relational database to streamline maintenance logs and inventory tracking.</p>
-    </div>
-
-    <div class="project-card">
-        <h3>AdventureWorks Sales Analysis</h3>
-        <div class="tags">
-            <span class="tag">POWER BI</span>
-            <span class="tag">SQL</span>
-        </div>
-        <p>Deep-dive analysis of retail performance metrics, identifying key revenue drivers and year-over-year growth trends.</p>
-    </div>
-</div>
-
-</body>
-</html>
+            background: var(--card-white);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            border-left: 8
