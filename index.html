@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | IT Data Analytics</title>
+    <style>
+        :root {
+            --primary: #0078d4; /* Professional Blue */
+            --dark: #1e1e1e;
+            --light: #f8f9fa;
+        }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: var(--light);
+            color: var(--dark);
+        }
+        .hero {
+            background: linear-gradient(135deg, #001f3f, #0078d4);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: -40px auto 40px;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        .project-card {
+            border: 1px solid #e1e4e8;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+        .tag {
+            display: inline-block;
+            background: #e1f5fe;
+            color: #01579b;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <h1>Tre'Von K.</h1>
+    <p>IT Data Analytics | CVTC '26</p>
+</section>
+
+<div class="container">
+    <h2>Capstone Project</h2>
+    <div class="project-card">
+        <h3>Powersports Inventory & Maintenance Tracker</h3>
+        <span class="tag">SQL</span> <span class="tag">Relational DB</span> <span class="tag">Dashboard</span>
+        <p>Developed a comprehensive system to track vehicle assets and maintenance schedules from 2021-2026. Designed a 6-table relational database to ensure data integrity.</p>
+    </div>
+
+    <h2>Technical Projects</h2>
+    <div class="project-card">
+        <h3>AdventureWorks Sales Analysis</h3>
+        <span class="tag">Power BI</span> <span class="tag">Data Modeling</span>
+        <p>Performed deep-dive analysis on store performance and annual revenue trends using SQL queries and interactive visualizations.</p>
+    </div>
+
+    <h2>Contact</h2>
+    <p>Connect with me for data-driven insights:</p>
+    <p><strong>Email:</strong> [Your Email]</p>
+</div>
+
+</body>
+</html>
