@@ -3,88 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | IT Data Analyst</title>
+    <title>Portfolio | IT Data Analytics</title>
     <style>
         :root {
-            --primary: #0078d4; /* Professional Blue */
-            --dark: #1e1e1e;
-            --light: #f8f9fa;
+            --primary-red: #cc0000;    /* Bold Crimson Red */
+            --accent-red: #ff4d4d;     /* Lighter Red for hover */
+            --bg-deep: #0f0f0f;        /* Near Black */
+            --bg-card: #1a1a1a;        /* Dark Grey for cards */
+            --text-silver: #d1d1d1;    /* Main text color */
         }
+        
         body {
-            font-family: 'Segoe UI', system-ui, sans-serif;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
-            background-color: var(--light);
-            color: var(--dark);
+            background-color: var(--bg-deep);
+            color: var(--text-silver);
         }
-        .hero {
-            background: linear-gradient(135deg, #001f3f, #0078d4);
-            color: white;
-            padding: 60px 20px;
+        
+        nav {
+            background: #000;
+            padding: 1rem;
             text-align: center;
+            border-bottom: 2px solid var(--primary-red);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
+        
+        nav a {
+            color: #fff;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--primary-red);
+        }
+        
+        .hero {
+            padding: 100px 20px;
+            text-align: center;
+            background: radial-gradient(circle at center, #250000 0%, #0f0f0f 70%);
+        }
+        
+        .hero h1 {
+            color: #fff;
+            font-size: 3.5rem;
+            margin: 0;
+            text-shadow: 0 0 15px rgba(204, 0, 0, 0.5);
+        }
+
+        .hero p {
+            color: var(--primary-red);
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
         .container {
             max-width: 900px;
-            margin: -40px auto 40px;
-            background: white;
+            margin: -50px auto 60px;
+            background: var(--bg-card);
             padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: var(--primary);
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-            margin-top: 30px;
-        }
-        .project-card {
-            border: 1px solid #e1e4e8;
             border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            transition: transform 0.2s;
+            border: 1px solid #333;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
         }
+        
+        h2 {
+            color: var(--primary-red);
+            font-size: 1.8rem;
+            border-left: 4px solid var(--primary-red);
+            padding-left: 15px;
+            margin-top: 40px;
+            text-transform: uppercase;
+        }
+        
+        .project-card {
+            border: 1px solid #2a2a2a;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
         .project-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--primary);
+            background: #222;
+            border-color: var(--primary-red);
+            transform: scale(1.01);
         }
+
+        .project-card h3 {
+            margin-top: 0;
+            color: #fff;
+        }
+        
         .tag {
             display: inline-block;
-            background: #e1f5fe;
-            color: #01579b;
-            padding: 4px 12px;
-            border-radius: 15px;
-            font-size: 0.85rem;
+            border: 1px solid var(--primary-red);
+            color: var(--primary-red);
+            padding: 2px 10px;
+            border-radius: 3px;
+            font-size: 0.75rem;
             font-weight: bold;
-            margin-right: 5px;
+            margin-right: 8px;
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #fff;
         }
     </style>
 </head>
 <body>
 
-    <nav style="background: #001f3f; padding: 15px; text-align: center;">
-    <a href="index.html" style="color: white; margin: 0 15px; text-decoration: none; font-weight: bold;">Overview</a>
-    <a href="projects.html" style="color: white; margin: 0 15px; text-decoration: none; font-weight: bold;">Projects</a>
-    <a href="resume.html" style="color: white; margin: 0 15px; text-decoration: none; font-weight: bold;">Resume</a>
+<nav>
+    <a href="index.html">Overview</a>
+    <a href="projects.html">Projects</a>
+    <a href="resume.html">Resume</a>
 </nav>
-    
+
 <section class="hero">
-    <h1>Tre'Von Kopping</h1>
-    <p>IT Data Analyst | CVTC 2026</p>
+    <h1>Tre'Von K.</h1>
+    <p>IT Data Analytics Specialist</p>
 </section>
 
 <div class="container">
-    <h2>Overview</h2>
+    <h2>Professional Profile</h2>
+    <p>Driven IT Data Analytics student specializing in relational databases and visual storytelling through data. Focused on delivering actionable insights for the powersports and medical industries.</p>
+
+    <h2>Featured Analytics</h2>
     <div class="project-card">
         <h3>Powersports Inventory & Maintenance Tracker</h3>
-        <span class="tag">SQL</span> <span class="tag">Relational DB</span> <span class="tag">Dashboard</span>
-        <p>Developed a comprehensive system to track vehicle assets and maintenance schedules from 2021-2026. Designed a 6-table relational database to ensure data integrity.</p>
+        <div class="tags">
+            <span class="tag">SQL SERVER</span>
+            <span class="tag">ETL</span>
+            <span class="tag">DASHBOARDING</span>
+        </div>
+        <p>A capstone initiative focused on asset management. Designed a complex 6-table relational database to streamline maintenance logs and inventory tracking.</p>
     </div>
 
-
-    <h2>Contact</h2>
-    <p>Connect with me for data-driven insights:</p>
-    <p><strong>Email:</strong> tkopping8@icloud.com</p>
+    <div class="project-card">
+        <h3>AdventureWorks Sales Analysis</h3>
+        <div class="tags">
+            <span class="tag">POWER BI</span>
+            <span class="tag">SQL</span>
+        </div>
+        <p>Deep-dive analysis of retail performance metrics, identifying key revenue drivers and year-over-year growth trends.</p>
+    </div>
 </div>
 
 </body>
