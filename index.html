@@ -6,7 +6,7 @@
     <title>Tre'Von K. | Data Analytics</title>
     
     <style>
-        /* CSS VARIABLES: These store your theme colors in one place for easy updates */
+        /* CSS variables for the colors I've chosen so far */
         :root {
             --primary-navy: #1a3a5a;   /* Blue Color */
             --accent-gold: #d4af37;    /* Tan Color */
@@ -21,7 +21,7 @@
             color: var(--text-main);
         }
 
-        /* NAVIGATION: Fixed to the top so it stays visible while scrolling */
+        /* Makes sure every remains visible when you scroll further down the page */
         nav {
             background: var(--primary-navy);
             padding: 20px;
@@ -45,10 +45,10 @@
             color: var(--accent-gold);
         }
 
-        /* HERO SECTION: This creates the large image area at the top */
+        /* I chose to put an image in the background because plain color seemed boring to me */
         .hero {
             height: 75vh; /* Sets height to 75% of the screen height */
-            /* linear-gradient creates a dark "tint" so the white text is readable over the clouds */
+            /* linear-gradient creates a dark tint so the white text is readable over the clouds */
             background: linear-gradient(rgba(26, 58, 90, 0.3), rgba(26, 58, 90, 0.5)), 
                         url('castle-bg.jpg'); 
             background-size: cover;
@@ -69,13 +69,13 @@
             text-shadow: 2px 4px 10px rgba(0,0,0,0.5);
         }
 
-        /* MAIN CONTAINER: The white box that floats over the hero image */
+        /* White box that will contain the sections in the body */
         .container {
             max-width: 1000px;
-            margin: -80px auto 50px; /* The negative margin creates the "overlap" effect */
+            margin: -80px auto 50px; /* This will create the overlap effect so it is on top of the image */
             background: white;
             padding: 60px;
-            border-radius: 4px; /* Sharp corners to match the professional castle theme */
+            border-radius: 4px; /* Makes the white box have sharper corners */
             box-shadow: 0 15px 35px rgba(0,0,0,0.1);
         }
 
@@ -87,7 +87,7 @@
             margin-bottom: 30px;
         }
 
-        /* CARD STYLE: Used for individual skill or project blocks */
+        /* This is for the individual skill or project blocks */
         .card {
             border: 1px solid #eee;
             padding: 25px;
