@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Computers & Programming | Academics</title>
+    <style>
+        :root {
+            --primary-navy: #1a3a5a;   
+            --accent-gold: #d4af37;    
+            --stone-grey: #f4f4f9;     
+            --text-main: #2c3e50;
+        }
+
+        body {
+            font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-color: var(--stone-grey);
+            color: var(--text-main);
+            line-height: 1.8;
+        }
+
+        nav {
+            background: var(--primary-navy);
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 25px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover { color: var(--accent-gold); }
+
+        .hero {
+            height: 40vh;
+            background: linear-gradient(rgba(26, 58, 90, 0.4), rgba(26, 58, 90, 0.6)), 
+                        url('../castle-bg.jpg'); 
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border-bottom: 6px solid var(--primary-navy);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            letter-spacing: 3px;
+            text-shadow: 2px 4px 10px rgba(0,0,0,0.5);
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -50px auto 50px; 
+            background: white;
+            padding: 50px;
+            border-radius: 4px; 
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: var(--primary-navy);
+            border-bottom: 2px solid var(--accent-gold);
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+        }
+
+        h3 {
+            color: var(--primary-navy);
+            font-size: 1.1rem;
+            margin-top: 25px;
+        }
+
+        .artifact-img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            display: block;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: var(--primary-navy);
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid var(--primary-navy);
+            padding: 10px 20px;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            background: var(--primary-navy);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html">Overview</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../academics.html">Academics</a>
+        <a href="../resume.html">Resume</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Intro to Computers & Programming</h1>
+    </section>
+
+    <div class="container">
+        
+        <h2>Course Overview</h2>
+        <p>This course provided a foundation in Information Technology and Software Development, bridging the gap between hardware mechanics and programming logic. It highlights the practical and theoretical skills necessary to navigate modern computing environments and design efficient, secure technical solutions.</p>
+
+        <h2>Skills Learned</h2>
+        <ul>
+            <li>Gained a comprehensive understanding of both Graphical User Interface (GUI) and Command Line Interface (CLI) environments.</li>
+            <li>Developed a structured approach to technical challenges using flowcharts and pseudocode to map out logic before implementation.</li>
+            <li>Applied essential coding constructs including selection, iteration, and arrays.</li>
+            <li>Utilized industry-standard tools such as GitHub for version control and developer tools for testing and debugging.</li>
+            <li>Gained insight into how digital information is structured, stored, and analyzed to drive data-driven decision-making.</li>
+        </ul>
+
+        <h2>Content Covered</h2>
+        
+        <h3>Functions</h3>
+        <p>Practiced the definition and syntax of functions to create modular, reusable code.</p>
+        <img src="function-skill.jpg" alt="Function syntax example" class="artifact-img">
+
+        <h3>ERP Systems</h3>
+        <p>Studied the importance of Enterprise Resource Planning systems and their core components in business operations.</p>
+
+        <h3>Simple vs. Compound Statements</h3>
+        <p>Learned the distinction between simple statements and compound statements, which contain conditions and nested logic.</p>
+
+        <h3>Selection Logic</h3>
+        <p>Implemented program decision-making using <strong>if</strong> constructs and <strong>switch</strong> statements.</p>
+
+        <h2>Artifacts & Application</h2>
+        
+        <h3>Modular Logic (Functions & Loops)</h3>
+        <p>I applied the use of functions and for-loops learned during the course to build structured program logic.</p>
+        <img src="logic-artifact.jpg" alt="Logic and Loops Artifact" class="artifact-img">
+
+        <h3>JavaScript Image Generation</h3>
+        <p>Applied programmatic skills to produce a dynamic image using JavaScript coding constructs.</p>
+        <img src="js-image.jpg" alt="JavaScript Image Output" class="artifact-img">
+
+        <h3>File System Structure</h3>
+        <p>Created a file system diagram to demonstrate a structured approach to data management prior to CLI implementation.</p>
+        <img src="fs-diagram.jpg" alt="File System Diagram" class="artifact-img">
+
+        <a href="../academics.html" class="back-link">← Return to Academics</a>
+    </div>
+
+</body>
+</html>
