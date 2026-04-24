@@ -89,25 +89,23 @@
 
         .artifact-img {
             width: 100%;
-            max-width: 600px;
             height: auto;
-            margin: 20px 0;
+            margin: 20px auto;
             border: 1px solid #ddd;
             border-radius: 4px;
             display: block;
         }
 
+        /* Centering the rows and making items within them larger */
         .image-row {
             display: flex;
             gap: 20px;
             margin: 20px 0;
-            max-width: 100%;
+            justify-content: center; 
         }
 
         .image-row img {
-            flex: 1;
-            width: 100%;
-            min-width: 0;
+            width: 45%; /* Increased from default to make them larger */
             height: auto;
             border: 1px solid #ddd;
             border-radius: 4px;
@@ -134,7 +132,8 @@
         }
 
         @media (max-width: 600px) {
-            .image-row { flex-direction: column; }
+            .image-row { flex-direction: column; align-items: center; }
+            .image-row img { width: 100%; }
         }
     </style>
 </head>
@@ -182,28 +181,21 @@
 
         <h3>Architectural Planning</h3>
         <p>Used pseudocode to organize logic and solve technical problems conceptually before initiating the coding phase.</p>
-        <img src="fund5.png" alt="Pseudocode" class="artifact-img" style="max-width: 850px; margin: 20px auto; display: block;">
+        <img src="fund5.png" alt="Pseudocode" class="artifact-img" style="max-width: 850px;">
         
         <h3>Quality Assurance</h3>
         <p>Applied test cases to predict and identify potential errors, ensuring program reliability through rigorous debugging.</p>
-        <img src="fund6.png" alt="Test Cases" class="artifact-img" style="max-width: 250px; margin: 20px auto; display: block;">
+        <img src="fund6.png" alt="Test Cases" class="artifact-img" style="max-width: 200px;">
         
         <h2>Artifacts & Application</h2>
         
         <h3>Code Organization (Functions)</h3>
         <p>Created functions to organize logic, significantly improving code maintainability and readability.</p>
-        <img src="fund7.png" alt="Functions" class="artifact-img" style="max-width: 850px; margin: 20px auto; display: block;">
+        <img src="fund7.png" alt="Functions" class="artifact-img" style="max-width: 850px;">
         
         <h3>Switch Statement Implementation</h3>
         <p>Utilized switch statements to provide a clean and efficient method for handling multiple outcome scenarios within the program.</p>
-        <img src="fund8.png" alt="Switch Statement" class="artifact-img" style="max-width: 850px; margin: 20px auto; display: block;">
+        <img src="fund8.png" alt="Switch Statement" class="artifact-img" style="max-width: 850px;">
         
         <h3>Text Adventure Game</h3>
-        <p>A capstone project for the course: a text-based adventure game that utilizes all core competencies, from complex loops to interactive decision-making logic.</p>
-        <img src="fund9.png" alt="Adventure Game Project" class="artifact-img">
-
-        <a href="../academics.html" class="back-link">← Return to Academics</a>
-    </div>
-
-</body>
-</html>
+        <p>A cap
