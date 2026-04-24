@@ -96,6 +96,24 @@
             border-left-color: var(--accent-gold);
             transform: translateX(10px);
         }
+
+        /* Button styling for project links */
+        .project-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: var(--primary-navy);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        .project-btn:hover {
+            background-color: var(--accent-gold);
+            color: var(--primary-navy);
+        }
     </style>
 </head>
 <body>
@@ -111,11 +129,19 @@
     </section>
 
     <div class="container">
-        <h2> There will be more projects below. This is just to show the layout so far.</h2>
+        <h2>Technical Projects Portfolio</h2>
         
         <div class="project-card">
             <h3>Powersports Inventory & Maintenance Tracker</h3>
-            <p>I'll put a detailed description of this project later.</p>
+            <p>A relational database project tracking vehicle inventory, sales, and service records. This includes a custom-designed ERD and maintenance scheduling logic.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Battle of Agincourt: Text Adventure</h3>
+            <p>An interactive historical simulation built using JavaScript. Demonstrates core programming competencies including array management for command processing, switch-case logic, and dynamic DOM manipulation.</p>
+            
+            <a href="https://tkopping2.github.io/Programming_Fundamentals/" target="_blank" class="project-btn">⚔️ Play Game</a>
+            <a href="https://github.com/tkopping2/Programming_Fundamentals" target="_blank" style="margin-left: 15px; color: var(--primary-navy); font-weight: bold; text-decoration: underline;">View Source</a>
         </div>
     </div>
 
