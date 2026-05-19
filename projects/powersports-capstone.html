@@ -86,6 +86,13 @@
             border-radius: 4px;
         }
 
+        /* Utility class to downsize individual full-width images (cp3 and cp9) */
+        .small-artifact {
+            display: block;
+            max-width: 60%;
+            margin: 25px auto;
+        }
+
         .img-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -94,6 +101,12 @@
         }
 
         .img-grid img { width: 100%; border: 1px solid #ddd; border-radius: 4px; }
+
+        /* Custom downsized grid container specifically for the Section 3 database schema images (cp4, cp5, cp6) */
+        .small-grid {
+            max-width: 80%;
+            margin: 25px auto;
+        }
 
         .highlight-box {
             background: #f0f4f8;
@@ -179,11 +192,11 @@
 
         <h2>2. Data Architecture (ERD Diagram)</h2>
         <p>Prior to database construction, I created an ERD diagram. This diagram defines field names, data types, primary/foreign key relationships, and cardinalities to ensure data integrity.</p>
-        <img src="cp3.png" alt="Entity Relationship Diagram" class="artifact-img">
+        <img src="cp3.png" alt="Entity Relationship Diagram" class="artifact-img small-artifact">
 
         <h2>3. Database Implementation & Population</h2>
         <p>Once I completed my ERD diagram, I then created the database with the tables, primary keys, and foreign keys that matched my ERD. After the database was created, I populated it with data to use for my capstone project.</p>
-        <div class="img-grid">
+        <div class="img-grid small-grid">
             <img src="cp4.png" alt="Database Table Creation">
             <img src="cp5.png" alt="SQL Population Script">
             <img src="cp6.png" alt="Data Verification Query">
@@ -198,7 +211,7 @@
 
         <h2>5. Final Executive Dashboard</h2>
         <p>Finally, I published both my maintenance report and sales report to Power BI Service to build my final executive dashboard. I added KPIs to highlight trends and patterns within the data to produce a final dashboard showcasing key findings.</p>
-        <img src="cp9.png" alt="Final Executive Dashboard" class="artifact-img">
+        <img src="cp9.png" alt="Final Executive Dashboard" class="artifact-img small-artifact">
         
         <a href="../projects.html" class="back-btn">← Back to Projects Portfolio</a>
     </div>
