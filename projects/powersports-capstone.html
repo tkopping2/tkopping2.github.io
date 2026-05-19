@@ -102,10 +102,25 @@
 
         .img-grid img { width: 100%; border: 1px solid #ddd; border-radius: 4px; }
 
-        /* Custom downsized grid container specifically for the Section 3 database schema images (cp4, cp5, cp6) */
-        .small-grid {
-            max-width: 80%;
-            margin: 25px auto;
+        /* Custom layout row keeping images side-by-side, but making cp4 narrower than cp5 and cp6 */
+        .database-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 2fr 2fr; 
+            gap: 20px;
+            margin: 25px 0;
+            align-items: start;
+        }
+
+        .database-grid img { width: 100%; border: 1px solid #ddd; border-radius: 4px; }
+
+        /* Responsive stack for mobile views */
+        @media (max-width: 768px) {
+            .database-grid {
+                grid-template-columns: 1fr;
+            }
+            .small-artifact {
+                max-width: 100%;
+            }
         }
 
         .highlight-box {
@@ -137,84 +152,4 @@
         .tech-pill {
             display: inline-block;
             background: var(--primary-navy);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            margin-right: 8px;
-            margin-bottom: 10px;
-        }
-    </style>
-</head>
-<body>
-
-    <nav>
-        <a href="../index.html">Overview</a>
-        <a href="../projects.html">Projects</a>
-        <a href="../academics.html">Academics</a>
-        <a href="../resume.html">Resume</a>
-    </nav>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Data Analyst Capstone</h1>
-            <p>Powersports Inventory & Maintenance Tracker</p>
-        </div>
-    </section>
-
-    <div class="container">
-        
-        <h2>Project Overview</h2>
-        <p>This Capstone project serves as the culmination of my Data Analyst journey at CVTC, synthesizing core competencies in database architecture, ETL processes, and data visualization. I developed a reporting system for a Powersports dealership to track maintenance, bike and part inventory, sales performance, and employee productivity.</p>
-        
-        <div class="highlight-box">
-            <strong>Key Insights Delivered:</strong>
-            <ul>
-                <li>Identification of brand popularity.</li>
-                <li>Predictive maintenance patterns for specific bike models.</li>
-                <li>Revenue across labor, parts, and unit sales.</li>
-            </ul>
-            <div>
-                <span class="tech-pill">SQL Server</span>
-                <span class="tech-pill">Power BI Desktop</span>
-                <span class="tech-pill">Power Query</span>
-                <span class="tech-pill">ERD Modeling</span>
-                <span class="tech-pill">DAX</span>
-            </div>
-        </div>
-
-        <h2>1. Project Charter & Scope</h2>
-        <p>The initial phase of the project involved drafting a formal charter to define the scope, timeline, and specific KPIs for measuring the system's success upon deployment.</p>
-        <div class="img-grid">
-            <img src="cp1.png" alt="Project Charter Page 1">
-            <img src="cp2.png" alt="Project Charter Page 2">
-        </div>
-
-        <h2>2. Data Architecture (ERD Diagram)</h2>
-        <p>Prior to database construction, I created an ERD diagram. This diagram defines field names, data types, primary/foreign key relationships, and cardinalities to ensure data integrity.</p>
-        <img src="cp3.png" alt="Entity Relationship Diagram" class="artifact-img small-artifact">
-
-        <h2>3. Database Implementation & Population</h2>
-        <p>Once I completed my ERD diagram, I then created the database with the tables, primary keys, and foreign keys that matched my ERD. After the database was created, I populated it with data to use for my capstone project.</p>
-        <div class="img-grid small-grid">
-            <img src="cp4.png" alt="Database Table Creation">
-            <img src="cp5.png" alt="SQL Population Script">
-            <img src="cp6.png" alt="Data Verification Query">
-        </div>
-
-        <h2>4. ETL & Analytical Reporting</h2>
-        <p>With the database created and the tables populated, I was then able to connect the database to Power BI Desktop to begin building my reports. I validated the column data types, ensured there were no null values, and checked the table connections, as they can be misinterpreted when connecting the database to Power BI Desktop. From there, I made a few measures for my visuals and then produced a maintenance report and a sales report.</p>
-        <div class="img-grid">
-            <img src="cp7.png" alt="Maintenance Report View">
-            <img src="cp8.png" alt="Sales Performance Report">
-        </div>
-
-        <h2>5. Final Executive Dashboard</h2>
-        <p>Finally, I published both my maintenance report and sales report to Power BI Service to build my final executive dashboard. I added KPIs to highlight trends and patterns within the data to produce a final dashboard showcasing key findings.</p>
-        <img src="cp9.png" alt="Final Executive Dashboard" class="artifact-img small-artifact">
-        
-        <a href="../projects.html" class="back-btn">← Back to Projects Portfolio</a>
-    </div>
-
-</body>
-</html>
+            color
