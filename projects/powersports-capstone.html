@@ -86,7 +86,7 @@
             border-radius: 4px;
         }
 
-        /* Utility class to downsize individual full-width images (cp3 and cp9) */
+        /* Restricts full-width layout visuals (cp3 and cp9) */
         .small-artifact {
             display: block;
             max-width: 60%;
@@ -102,7 +102,7 @@
 
         .img-grid img { width: 100%; border: 1px solid #ddd; border-radius: 4px; }
 
-        /* Custom layout row keeping images side-by-side, but making cp4 narrower than cp5 and cp6 */
+        /* Custom row adjusting column sizing percentages to shrink cp4 */
         .database-grid {
             display: grid;
             grid-template-columns: 1.2fr 2fr 2fr; 
@@ -113,7 +113,6 @@
 
         .database-grid img { width: 100%; border: 1px solid #ddd; border-radius: 4px; }
 
-        /* Responsive stack for mobile views */
         @media (max-width: 768px) {
             .database-grid {
                 grid-template-columns: 1fr;
@@ -136,20 +135,4 @@
             margin-top: 40px;
             color: var(--primary-navy);
             text-decoration: none;
-            font-weight: bold;
-            border: 2px solid var(--primary-navy);
-            padding: 12px 25px;
-            transition: 0.3s;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-        }
-
-        .back-btn:hover {
-            background: var(--primary-navy);
-            color: white;
-        }
-
-        .tech-pill {
-            display: inline-block;
-            background: var(--primary-navy);
-            color
+            font
